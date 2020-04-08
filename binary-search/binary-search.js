@@ -25,6 +25,29 @@ const binarySearch = (array, target) => {
   }
 }
 
+/* const binarySearch = (array, target) =>{
+	let startIndex = 0
+	let endIndex = array.length - 1
+	let pointer = Math.floor((endIndex + startIndex)/2)
+	let counter =0
+
+	while(array[pointer] !== target && startIndex<endIndex && counter<= Math.ceil(array.length/2)){
+		if (target >array[pointer]){
+			startIndex = pointer +1
+			counter ++
+		} else if (target < array[pointer]){
+			endIndex = pointer -1
+			counter++
+		} else if (target === array[pointer]){
+			return true
+		}
+		pointer = Math.floor((endIndex + startIndex)/2)
+	}
+	console.log(array[pointer])
+	return false
+}
+
+ */
 
 /*
 	EXTRA CREDIT:

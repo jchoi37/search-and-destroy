@@ -2,7 +2,19 @@
 
 //Complete this algo
 const isLoop = (linkedlist) => {
+  let tortise = linkedlist.head
+  let hare = linkedlist.head
 
+  console.log('runnning', hare.next.next)
+  while(hare && hare.next)
+    tortise = tortise.next
+    console.log(tortise, "TORT")
+    hare = hare.next.next
+    console.log(hare, "HARE")
+    if(tortise.next === hare.next.next){
+      return true
+    }
+  return false
 };
 
 
